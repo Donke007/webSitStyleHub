@@ -19,11 +19,8 @@ body .s_btn {
 body .s_btn .s_tab_inner {
   position: absolute;
 }
-body .s_btn .s_tab_inner > b {
-  color: #fff;
-}
 body .s_btn .s_tab_inner > a {
-  color: #ccc;
+  color: #999;
 }
 body .s_btn.btnhover {
   background: #4576bf;
