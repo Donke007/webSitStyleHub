@@ -84,11 +84,15 @@ body #content_left .c-container:hover {
 }
 body .c-container .t > a,
 body .c-default .t > a {
-  color: #4a91e4 !important;
+  color: #4a91e4;
 }
 body .c-container .t > a em,
 body .c-default .t > a em {
   color: #ec7676;
+}
+body .c-container .t > .OP_LOG_LINK,
+body .c-default .t > .OP_LOG_LINK {
+  color: #fff;
 }
 body .s_form .bg.s_ipt_wr.quickdelete-wrap {
   background-color: #fff;
