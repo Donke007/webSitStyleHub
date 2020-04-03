@@ -51,11 +51,12 @@ body #s_tab {
 body .s_tab .s_tab_inner {
   position: absolute;
 }
-body .s_tab .s_tab_inner > b {
-  color: #fff;
+body .s_tab .s_tab_inner > b,
+body .s_tab .s_tab_inner > a:hover {
+  color: #fff !important;
 }
 body .s_tab .s_tab_inner > a {
-  color: #ccc;
+  color: #ccc !important;
 }
 body #content_right {
   border: none;
