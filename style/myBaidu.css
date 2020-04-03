@@ -48,6 +48,15 @@ body #head,
 body #s_tab {
   background: transparent;
 }
+body .hit_top_new .c-gap-bottom-small {
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+}
+body .hit_top_new .c-gap-bottom-small > a {
+  color: #4a91e4;
+  margin-left: 5px;
+}
 body .s_tab .s_tab_inner {
   position: absolute;
 }
@@ -78,6 +87,7 @@ body #content_left .c-container {
   border-radius: 5px;
   transition: border-left-width 0.2s, transform 0.2s;
   position: relative;
+  box-sizing: border-box;
 }
 body #content_left .c-container .blur-bg {
   position: absolute;

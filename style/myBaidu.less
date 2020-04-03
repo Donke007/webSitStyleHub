@@ -11,6 +11,7 @@
 //     background: url(https://www2.bing.com/az/hprichbg/rb/ParkCity_ZH-CN7858135089_1920x1080.jpg) no-repeat;
 //     background-attachment: fixed;
 // }
+@linkColor: rgb(74, 145, 228);
 
 body {
     font-family: 'Microsoft Yahei';
@@ -81,6 +82,17 @@ body {
 
     }
 
+    .hit_top_new .c-gap-bottom-small {
+        padding: 10px;
+        background: #fff;
+        border-radius: 5px;
+
+        >a {
+            color: @linkColor;
+            margin-left: 5px;
+        }
+    }
+
     .s_tab {
         .s_tab_inner {
             position: absolute;
@@ -128,7 +140,7 @@ body {
             //   border-left-color: #9dcce2;
             transition: border-left-width 0.2s, transform 0.2s;
             position: relative;
-
+            box-sizing: border-box;
             .blur-bg {
                 position: absolute;
                 width: 100%;
@@ -150,7 +162,7 @@ body {
     .c-container .t,
     .c-default .t {
         >a {
-            color: rgb(74, 145, 228);
+            color: @linkColor;
 
             em {
                 color: rgb(236, 118, 118);
