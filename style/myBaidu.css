@@ -1,9 +1,6 @@
 body {
   font-family: 'Microsoft Yahei';
 }
-body #wrapper_wrapper {
-  padding-top: 100px;
-}
 body #head #result_logo img {
   width: 101px;
   height: 46px;
@@ -15,15 +12,6 @@ body .c-gap-icon-right-small {
 body .s_btn {
   transition: background 0.1s;
   border: none;
-}
-body .s_btn .s_tab_inner {
-  position: absolute;
-}
-body .s_btn .s_tab_inner > b {
-  color: #fff;
-}
-body .s_btn .s_tab_inner > a {
-  color: #ccc;
 }
 body .s_btn.btnhover {
   background: #4576bf;
@@ -59,6 +47,15 @@ body .s_form,
 body #head,
 body #s_tab {
   background: transparent;
+}
+body .s_tab .s_tab_inner {
+  position: absolute;
+}
+body .s_tab .s_tab_inner > b {
+  color: #fff;
+}
+body .s_tab .s_tab_inner > a {
+  color: #ccc;
 }
 body #content_right {
   border: none;
