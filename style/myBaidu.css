@@ -57,6 +57,9 @@ body .hit_top_new .c-gap-bottom-small > a {
   color: #4a91e4;
   margin-left: 5px;
 }
+body .c-border {
+  width: auto;
+}
 body .s_tab .s_tab_inner {
   position: absolute;
 }
