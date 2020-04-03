@@ -78,6 +78,9 @@ body #content_right #con-ar .result-op.xpath-log {
   padding: 10px;
   border-radius: 5px;
 }
+body .container_l #rs {
+  box-sizing: border-box;
+}
 body .container_l #rs a {
   text-decoration: none;
 }
