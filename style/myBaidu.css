@@ -82,12 +82,12 @@ body #content_left .c-container:hover {
   background-position-y: 100%;
   transform: translateX(-5px);
 }
-body .c-container .t a,
-body .c-default .t a {
+body .c-container .t > a,
+body .c-default .t > a {
   color: #4a91e4 !important;
 }
-body .c-container .t a em,
-body .c-default .t a em {
+body .c-container .t > a em,
+body .c-default .t > a em {
   color: #ec7676;
 }
 body .s_form .bg.s_ipt_wr.quickdelete-wrap {
