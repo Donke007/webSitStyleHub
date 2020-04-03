@@ -1,6 +1,9 @@
 body {
   font-family: 'Microsoft Yahei';
 }
+body #wrapper_wrapper {
+  padding-top: 100%;
+}
 body #head #result_logo img {
   width: 101px;
   height: 46px;
@@ -12,6 +15,15 @@ body .c-gap-icon-right-small {
 body .s_btn {
   transition: background 0.1s;
   border: none;
+}
+body .s_btn .s_tab_inner {
+  position: absolute;
+}
+body .s_btn .s_tab_inner > b {
+  color: #fff;
+}
+body .s_btn .s_tab_inner > a {
+  color: #ccc;
 }
 body .s_btn.btnhover {
   background: #4576bf;
