@@ -32,16 +32,16 @@ body .donke-bg-blur {
   -ms-filter: blur(15px);
 }
 body .donke-bg-blur.bg-th {
-  background: url(https://donke-c.oss-cn-hangzhou.aliyuncs.com/myBG/th.jpg) no-repeat;
+  background: url(../images/myBG/th.jpg) no-repeat;
 }
 body .donke-bg-blur.bg-bg {
-  background-image: url(https://donke-c.oss-cn-hangzhou.aliyuncs.com/myBG/bg.png);
+  background-image: url(../images/myBG/bg.png);
 }
 body .donke-bg-blur.bg-1 {
-  background-image: url(https://donke-c.oss-cn-hangzhou.aliyuncs.com/myBG/bg1.png);
+  background-image: url(../images/myBG/bg1.png);
 }
 body .donke-bg-blur.bg-2 {
-  background-image: url(https://donke-c.oss-cn-hangzhou.aliyuncs.com/myBG/bg2.png);
+  background-image: url(../images/myBG/bg2.png);
 }
 body .s_form,
 body #head,
