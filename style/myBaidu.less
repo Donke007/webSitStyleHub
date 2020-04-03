@@ -12,28 +12,33 @@
 //     background-attachment: fixed;
 // }
 
-body{
+body {
     font-family: 'Microsoft Yahei';
-    #head{
+
+    #head {
         #result_logo img {
             width: 101px;
             height: 46px;
             transform: translateY(-6px);
         }
     }
-    .c-gap-icon-right-small{
+
+    .c-gap-icon-right-small {
         border-radius: 3px;
     }
-    .s_btn{
+
+    .s_btn {
         transition: background 0.1s;
         border: none;
-        &.btnhover{
+
+        &.btnhover {
             background: #4576bf;
             border: none;
             box-shadow: none;
         }
 
     }
+
     .donke-bg-blur {
         width: 100%;
         height: 100%;
@@ -47,131 +52,162 @@ body{
         -moz-filter: blur(15px);
         -o-filter: blur(15px);
         -ms-filter: blur(15px);
-        &.bg-th{
-            background: url(../images/myBG/th.jpg) no-repeat;
+
+        &.bg-th {
+            background: url(../images/th.jpg) no-repeat;
         }
-        &.bg-bg{
-            background-image: url(../images/myBG/bg.png)
+
+        &.bg-bg {
+            background-image: url(../images/bg.png)
         }
-        &.bg-1{
-            background-image: url(../images/myBG/bg1.png);
+
+        &.bg-1 {
+            background-image: url(../images/bg1.png);
         }
-        &.bg-2{
-            background-image: url(../images/myBG/bg2.png);
+
+        &.bg-2 {
+            background-image: url(../images/bg2.png);
         }
     }
-    .s_form,#head,#s_tab{
+
+    .s_form,
+    #head,
+    #s_tab {
         background: transparent;
     }
+
     #content_right {
         border: none;
+
         #con-ar .result-op.xpath-log {
-        background: #fff;
-        padding: 10px;
-        border-radius: 5px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
         }
     }
-    .container_l{
-        #rs{
-            a{
-                text-decoration:none;
-                &:hover{
+
+    .container_l {
+        #rs {
+            a {
+                text-decoration: none;
+
+                &:hover {
                     color: rgb(77, 179, 140);
                 }
             }
         }
     }
-     #content_left{
-         .c-container{
-              background-color: #fff;
-              padding: 10px;
-              border-radius: 5px;
+
+    #content_left {
+        .c-container {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
             //   border-left-width: 0px;
             //   border-left-style: solid;
             //   border-left-color: #9dcce2;
-              transition: border-left-width 0.2s,transform 0.2s;
-              position: relative;
-              .blur-bg {
-                  position: absolute;
-                  width: 100%;
-                  height: 100%;
-              }
-              
-         } 
+            transition: border-left-width 0.2s, transform 0.2s;
+            position: relative;
+
+            .blur-bg {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
         .c-container:hover {
             border-left-width: 5px;
-            background: url(http://donke-c.oss-cn-hangzhou.aliyuncs.com/myCSS/image/searchBg.gif) no-repeat;
+            background: url(../images/searchBg.gif) no-repeat;
             background-color: #fff;
             background-position-x: 100%;
             background-position-y: 100%;
             transform: translateX(-5px)
         }
-     } 
-     .c-container .t,
-     .c-default .t{
-         >a{
-              color: rgb(74, 145, 228);
-             em{
+    }
+
+    .c-container .t,
+    .c-default .t {
+        >a {
+            color: rgb(74, 145, 228);
+
+            em {
                 color: rgb(236, 118, 118);
-             }
-         }
-         >.OP_LOG_LINK{
-             color: #fff;
-         }
-     }
-    .s_form{
+            }
+        }
+
+        >.OP_LOG_LINK {
+            color: #fff;
+        }
+    }
+
+    .s_form {
         .bg.s_ipt_wr.quickdelete-wrap {
             background-color: #fff;
             border-radius: 5px 0 0 5px;
         }
+
         .bg.s_btn_wr input {
             border-radius: 0 5px 5px 0;
         }
     }
-    #page{
-        a:not(.n),strong,.pc{
+
+    #page {
+
+        a:not(.n),
+        strong,
+        .pc {
             height: 36px;
             border-radius: 50%;
             // border-color: #fff;
             box-sizing: border-box;
-            
+
         }
-        strong{
+
+        strong {
             border-width: 0px;
             color: rgb(26, 77, 124);
             background: rgba(255, 255, 255, 1)
         }
-        a:not(.n){
+
+        a:not(.n) {
             border-width: 2px;
             border-color: #fff;
             color: #fff;
-            transition: border-width .2s,background .2s,color .2s;
+            transition: border-width .2s, background .2s, color .2s;
             background: rgba(255, 255, 255, 0);
+
             &:hover {
                 border-width: 0px;
                 color: rgb(26, 77, 124);
                 background: rgba(255, 255, 255, 1)
             }
+
             // border-width: 1px;
         }
-        .n{ 
+
+        .n {
             background: none;
             background: none;
             color: #fff;
             border: none;
-            &:hover{
+
+            &:hover {
                 border: none;
                 background: none
             }
         }
-        .fk{
+
+        .fk {
             display: none;
         }
     }
+
     #rs {
         width: 538px;
         padding: 10px;
         border-radius: 5px;
     }
-    
+
 }

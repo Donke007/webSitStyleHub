@@ -32,16 +32,16 @@ body .donke-bg-blur {
   -ms-filter: blur(15px);
 }
 body .donke-bg-blur.bg-th {
-  background: url(../images/myBG/th.jpg) no-repeat;
+  background: url(../images/th.jpg) no-repeat;
 }
 body .donke-bg-blur.bg-bg {
-  background-image: url(../images/myBG/bg.png);
+  background-image: url(../images/bg.png);
 }
 body .donke-bg-blur.bg-1 {
-  background-image: url(../images/myBG/bg1.png);
+  background-image: url(../images/bg1.png);
 }
 body .donke-bg-blur.bg-2 {
-  background-image: url(../images/myBG/bg2.png);
+  background-image: url(../images/bg2.png);
 }
 body .s_form,
 body #head,
@@ -76,7 +76,7 @@ body #content_left .c-container .blur-bg {
 }
 body #content_left .c-container:hover {
   border-left-width: 5px;
-  background: url(http://donke-c.oss-cn-hangzhou.aliyuncs.com/myCSS/image/searchBg.gif) no-repeat;
+  background: url(../images/searchBg.gif) no-repeat;
   background-color: #fff;
   background-position-x: 100%;
   background-position-y: 100%;
