@@ -16,6 +16,9 @@ body {
 body #container {
   width: auto;
 }
+body .nums {
+  width: 32%;
+}
 body .wrapper_new #head .head_wrapper #u .username {
   color: #a2b8dc;
 }
