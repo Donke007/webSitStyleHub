@@ -12,7 +12,7 @@
 //     background-attachment: fixed;
 // }
 @linkColor: rgb(74, 145, 228);
-
+@cWidth: 40%;
 .clearfix:after {
     /*伪元素是行内元素 正常浏览器清除浮动方法*/
     content: "";
@@ -167,7 +167,8 @@ body {
     #content_right {
         border: none;
         *zoom: 1;
-
+        position: absolute;
+        left: @cWidth;
         #con-ar .result-op.xpath-log {
             background: #fff;
             padding: 10px;
@@ -204,10 +205,11 @@ body {
 
     #content_left {
         min-width: 540px;
-        width: 60%;
+        width: @cWidth;
 
         .c-container {
             background-color: #fff;
+            width: 100%;
             padding: 10px;
             border-radius: 5px;
             //   border-left-width: 0px;
@@ -225,7 +227,7 @@ body {
 
         }
 
-        .c-container:hover {
+        >.c-container:hover {
             border-left-width: 5px;
             background: url(../images/searchBg.gif) no-repeat;
             background-color: #fff;
