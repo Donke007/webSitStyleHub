@@ -169,8 +169,9 @@ body #rs {
   border-radius: 5px;
 }
 @media screen and (min-width: 1921px) {
-  .head_wrapper {
+  #head .head_wrapper {
     /* width: 1196px; */
+    width: auto;
     margin: 0 auto;
     position: relative;
   }
