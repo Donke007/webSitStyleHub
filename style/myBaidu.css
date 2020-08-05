@@ -76,6 +76,12 @@ body .donke-bg-blur.bg-bg {
 body .donke-bg-blur.bg-1 {
   background-image: url(../images/bg1.png);
 }
+body .donke-bg-blur.bg-2 {
+  background-image: url(../images/bg2.png);
+}
+body .donke-bg-blur.bg-none {
+  background-color: #ced1d6;
+}
 body .s_form,
 body #head,
 body #s_tab {
@@ -143,7 +149,6 @@ body #content_left > .c-container {
 }
 body #content_left .c-container {
   background-color: #fff;
-  width: 100%;
   padding: 10px;
   border-radius: 5px;
   transition: border-left-width 0.2s, transform 0.2s;
