@@ -37,6 +37,10 @@ body .wrapper_new .container_new ~ #page .page-inner {
 body .wrapper_new #s_tab.s_tab .s_tab_inner {
   padding-left: 106px;
 }
+body .wrapper_new #s_tab.s_tab .s_tab_inner > a {
+  color: #ced1d6;
+  transition: color 0.2s;
+}
 body #head #result_logo img {
   width: 101px;
   height: 46px;
