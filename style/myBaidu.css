@@ -1,8 +1,23 @@
 body {
   font-family: 'Microsoft Yahei';
 }
-body .wrapper_new #u .username {
+body .wrapper_new #head .head_wrapper #u .username {
   color: #a2b8dc;
+}
+body .wrapper_new .s_form {
+  padding-left: 0;
+}
+body .wrapper_new .container_new ~ #page {
+  background-color: transparent;
+  margin: 30px 0 0;
+  padding-left: 0;
+  position: absolute;
+}
+body .wrapper_new .container_new ~ #page .page-inner {
+  padding: 14px 0 30px 236px;
+}
+body .wrapper_new #s_tab.s_tab .s_tab_inner {
+  padding-left: 106px;
 }
 body #head #result_logo img {
   width: 101px;
@@ -90,6 +105,9 @@ body .container_l #rs a {
 body .container_l #rs a:hover {
   color: #4db38c;
 }
+body #container {
+  padding-left: 96px;
+}
 body #content_left .c-container {
   background-color: #fff;
   padding: 10px;
@@ -176,12 +194,15 @@ body #rs {
   border-radius: 5px;
 }
 @media screen and (min-width: 1921px) {
-  #head .head_wrapper {
+  body #head .head_wrapper {
     /* width: 1196px; */
     width: auto;
     margin: 0 auto;
     position: relative;
-    transform: translate3d(0, 0, 1px);
+    transform: translate3d(0px, 0, 1px);
     padding: 0 96px;
+  }
+  body #container {
+    padding-left: 96px;
   }
 }

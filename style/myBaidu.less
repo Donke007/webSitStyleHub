@@ -22,8 +22,32 @@ body {
 
     .wrapper_new {
 
-        #u .username {
-            color: #a2b8dc;
+
+        #head {
+            .head_wrapper {
+                #u .username {
+                    color: #a2b8dc;
+                }
+            }
+        }
+
+        .s_form {
+            padding-left: 0;
+        }
+
+        .container_new~#page {
+            background-color: transparent;
+            margin: 30px 0 0;
+            padding-left: 0;
+            position: absolute;
+        }
+
+        .container_new~#page .page-inner {
+            padding: 14px 0 30px 236px;
+        }
+
+        #s_tab.s_tab .s_tab_inner {
+            padding-left: 106px;
         }
     }
 
@@ -143,6 +167,10 @@ body {
         }
     }
 
+    #container {
+        padding-left: 96px;
+    }
+
     #content_left {
         .c-container {
             background-color: #fff;
@@ -202,6 +230,7 @@ body {
     #page {
         position: absolute;
         background-color: transparent;
+
         a:not(.n),
         strong,
         .pc {
@@ -260,12 +289,19 @@ body {
 }
 
 @media screen and (min-width: 1921px) {
-    #head .head_wrapper {
-        /* width: 1196px; */
-        width: auto;
-        margin: 0 auto;
-        position: relative;
-        transform: translate3d(0, 0, 1px);
-        padding: 0 96px;
+    body {
+        #head .head_wrapper {
+            /* width: 1196px; */
+            width: auto;
+            margin: 0 auto;
+            position: relative;
+            transform: translate3d(0px, 0, 1px);
+            padding: 0 96px;
+            padding: 0 96px;
+        }
+
+        #container {
+            padding-left: 96px;
+        }
     }
 }
