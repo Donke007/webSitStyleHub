@@ -16,8 +16,15 @@
 body {
     font-family: 'Microsoft Yahei';
 
-    #wrapper_wrapper {
-        // padding-top: 100px;
+    // #wrapper_wrapper {
+    //     // padding-top: 100px;
+    // }
+
+    .wrapper_new {
+
+        #u .username {
+            color: #a2b8dc;
+        }
     }
 
     #head {
@@ -193,7 +200,8 @@ body {
     }
 
     #page {
-
+        position: absolute;
+        background-color: transparent;
         a:not(.n),
         strong,
         .pc {
@@ -257,5 +265,7 @@ body {
         width: auto;
         margin: 0 auto;
         position: relative;
+        transform: translate3d(0, 0, 1px);
+        padding: 0 96px;
     }
 }
