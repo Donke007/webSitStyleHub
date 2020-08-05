@@ -108,6 +108,9 @@ body .container_l #rs a:hover {
 body #container {
   padding-left: 96px;
 }
+body #content_left {
+  min-width: 540px;
+}
 body #content_left .c-container {
   background-color: #fff;
   padding: 10px;
@@ -204,5 +207,6 @@ body #rs {
   }
   body #container {
     padding-left: 96px;
+    margin: 0;
   }
 }
