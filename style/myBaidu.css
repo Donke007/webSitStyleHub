@@ -1,5 +1,20 @@
+.clearfix:after {
+  /*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+  /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
 body {
   font-family: 'Microsoft Yahei';
+}
+body #container {
+  width: auto;
 }
 body .wrapper_new #head .head_wrapper #u .username {
   color: #a2b8dc;
@@ -90,11 +105,20 @@ body .s_tab .s_tab_inner > a {
 }
 body #content_right {
   border: none;
+  *zoom: 1;
 }
 body #content_right #con-ar .result-op.xpath-log {
   background: #fff;
   padding: 10px;
   border-radius: 5px;
+}
+body #content_right:after {
+  /*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 body .container_l #rs {
   box-sizing: border-box;
@@ -110,6 +134,7 @@ body #container {
 }
 body #content_left {
   min-width: 540px;
+  width: 60%;
 }
 body #content_left .c-container {
   background-color: #fff;
@@ -207,6 +232,7 @@ body #rs {
   }
   body #container {
     padding-left: 96px;
+    min-width: 1222px;
     margin: 0;
   }
 }

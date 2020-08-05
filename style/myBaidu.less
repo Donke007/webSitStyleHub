@@ -13,13 +13,34 @@
 // }
 @linkColor: rgb(74, 145, 228);
 
+.clearfix:after {
+    /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
+
 body {
     font-family: 'Microsoft Yahei';
 
     // #wrapper_wrapper {
     //     // padding-top: 100px;
     // }
+    #container {
+        width: auto;
+        // display: flex;
+    }
 
+    // .head_nums_cont_outer{
+
+    // }
     .wrapper_new {
 
 
@@ -145,12 +166,22 @@ body {
 
     #content_right {
         border: none;
+        *zoom: 1;
 
         #con-ar .result-op.xpath-log {
             background: #fff;
             padding: 10px;
             border-radius: 5px;
         }
+    }
+
+    #content_right:after {
+        /*伪元素是行内元素 正常浏览器清除浮动方法*/
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
     }
 
     .container_l {
@@ -173,6 +204,8 @@ body {
 
     #content_left {
         min-width: 540px;
+        width: 60%;
+
         .c-container {
             background-color: #fff;
             padding: 10px;
@@ -303,6 +336,7 @@ body {
 
         #container {
             padding-left: 96px;
+            min-width: 1222px;
             margin: 0;
         }
     }
