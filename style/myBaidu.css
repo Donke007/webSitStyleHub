@@ -146,6 +146,7 @@ body #container {
 }
 body #content_left {
   min-width: 540px;
+  width: 40% !important;
 }
 body #content_left > .c-container {
   width: 80%;
