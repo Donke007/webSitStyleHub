@@ -245,6 +245,9 @@ body #rs {
     transform: translate3d(0px, 0, 1px);
     padding: 0 96px;
   }
+  body #container.sam_newgrid {
+    width: auto;
+  }
   body #container {
     padding-left: 96px;
     min-width: 1222px;
