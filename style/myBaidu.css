@@ -9,21 +9,6 @@
   *zoom: 1;
   /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
 }
-@media screen and (max-width: 1920px) {
-  body .head_wrapper {
-    padding-left: 100px;
-  }
-  body #content_left {
-    min-width: 565px;
-    width: 60%;
-  }
-  body #container.sam_newgrid {
-    margin-left: 0;
-  }
-  body #content_right {
-    left: calc(60% + 100px);
-  }
-}
 body {
   font-family: 'Microsoft Yahei';
 }
@@ -257,6 +242,21 @@ body #rs {
   width: 538px;
   padding: 10px;
   border-radius: 5px;
+}
+@media screen and (max-width: 1920px) {
+  body .head_wrapper {
+    padding-left: 100px;
+  }
+  body #content_left {
+    min-width: 565px;
+    width: 60%;
+  }
+  body #container.sam_newgrid {
+    margin-left: 0;
+  }
+  body #content_right {
+    left: calc(60% + 100px);
+  }
 }
 @media screen and (min-width: 1921px) {
   body #head .head_wrapper {
