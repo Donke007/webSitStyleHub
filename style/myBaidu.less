@@ -43,6 +43,10 @@
         #container.sam_newgrid {
             margin-left: 0;
         }
+
+        #content_right {
+            left: calc(@cWidth + 100px);
+        }
     }
 }
 
@@ -52,6 +56,13 @@ body {
     // #wrapper_wrapper {
     //     // padding-top: 100px;
     // }
+    #head{
+        #u{
+            a{
+                color: #fff;
+            }
+        }
+    }
     #container {
         width: auto;
         // display: flex;
@@ -301,7 +312,9 @@ body {
             border-radius: 0 5px 5px 0;
         }
     }
-
+    .wrapper_new .sam_newgrid~#page{
+        background-color: transparent;
+    }
     #page {
         position: absolute;
         background-color: transparent;

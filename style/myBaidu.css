@@ -20,9 +20,15 @@
   body #container.sam_newgrid {
     margin-left: 0;
   }
+  body #content_right {
+    left: calc(60% + 100px);
+  }
 }
 body {
   font-family: 'Microsoft Yahei';
+}
+body #head #u a {
+  color: #fff;
 }
 body #container {
   width: auto;
@@ -203,6 +209,9 @@ body .s_form .bg.s_ipt_wr.quickdelete-wrap {
 }
 body .s_form .bg.s_btn_wr input {
   border-radius: 0 5px 5px 0;
+}
+body .wrapper_new .sam_newgrid ~ #page {
+  background-color: transparent;
 }
 body #page {
   position: absolute;
