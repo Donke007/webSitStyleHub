@@ -137,6 +137,7 @@ body #content_right:after {
 }
 body .container_l #rs {
   box-sizing: border-box;
+  min-width: 700px;
   width: 40%;
 }
 body .container_l #rs a {
