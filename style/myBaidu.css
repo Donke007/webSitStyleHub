@@ -255,7 +255,10 @@ body #rs {
     margin-left: 0;
   }
   body #content_right {
-    left: calc(60% + 100px);
+    left: calc(50%);
+  }
+  body .wrapper_new .page-inner {
+    padding-left: 96px;
   }
 }
 @media screen and (min-width: 1921px) {
