@@ -295,12 +295,19 @@ body #rs {
     transform: translate3d(0px, 0, 1px);
     padding: 0 96px;
   }
+  body .head_wrapper #u {
+    right: 66px;
+  }
   body #container.sam_newgrid {
     width: auto;
+    padding-left: 178px;
   }
   body #container {
     padding-left: 96px;
     min-width: 1222px;
     margin: 0;
+  }
+  body .wrapper_new .page-inner {
+    padding-left: 178px;
   }
 }
