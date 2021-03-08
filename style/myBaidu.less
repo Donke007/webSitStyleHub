@@ -13,8 +13,8 @@
 // }
 @linkColor: rgb(74, 145, 228);
 @cWidth: 40%;
+
 .clearfix:after {
-    /*伪元素是行内元素 正常浏览器清除浮动方法*/
     content: "";
     display: block;
     height: 0;
@@ -37,9 +37,11 @@ body {
         width: auto;
         // display: flex;
     }
-    .nums{
+
+    .nums {
         width: 32%;
     }
+
     // .head_nums_cont_outer{
 
     // }
@@ -71,7 +73,8 @@ body {
 
         #s_tab.s_tab .s_tab_inner {
             padding-left: 106px;
-            >a{
+
+            >a {
                 color: #ced1d6;
                 transition: color 0.2s;
             }
@@ -131,6 +134,7 @@ body {
         &.bg-2 {
             background-image: url(../images/bg2.png);
         }
+
         &.bg-none {
             background-color: #ced1d6;
         }
@@ -177,7 +181,8 @@ body {
         border: none;
         *zoom: 1;
         position: absolute;
-        left: @cWidth;
+        left: calc(@cWidth + 100px);
+
         #con-ar .result-op.xpath-log {
             background: #fff;
             padding: 10px;
@@ -197,6 +202,7 @@ body {
     .container_l {
         #rs {
             box-sizing: border-box;
+            width: 900px;
 
             a {
                 text-decoration: none;
@@ -214,10 +220,12 @@ body {
 
     #content_left {
         min-width: 540px;
-        width: @cWidth !important;
-        >.c-container{
+        width: @cWidth  !important;
+
+        >.c-container {
             width: 80%;
         }
+
         .c-container {
             background-color: #fff;
             // width: 100%;
@@ -347,9 +355,10 @@ body {
             padding: 0 96px;
         }
 
-        #container.sam_newgrid{
+        #container.sam_newgrid {
             width: auto;
         }
+
         #container {
             padding-left: 96px;
             min-width: 1222px;

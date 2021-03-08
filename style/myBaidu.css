@@ -1,5 +1,4 @@
 .clearfix:after {
-  /*伪元素是行内元素 正常浏览器清除浮动方法*/
   content: "";
   display: block;
   height: 0;
@@ -117,7 +116,7 @@ body #content_right {
   border: none;
   *zoom: 1;
   position: absolute;
-  left: 40%;
+  left: calc(40% + 100px);
 }
 body #content_right #con-ar .result-op.xpath-log {
   background: #fff;
@@ -134,6 +133,7 @@ body #content_right:after {
 }
 body .container_l #rs {
   box-sizing: border-box;
+  width: 900px;
 }
 body .container_l #rs a {
   text-decoration: none;
