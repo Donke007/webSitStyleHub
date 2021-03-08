@@ -9,6 +9,17 @@
   *zoom: 1;
   /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
 }
+@media screen and (max-width: 1920px) {
+  body .head_wrapper {
+    padding-left: 100px;
+  }
+  body #content_left {
+    width: 60%;
+  }
+  body #container.sam_newgrid {
+    margin-left: 0;
+  }
+}
 body {
   font-family: 'Microsoft Yahei';
 }
