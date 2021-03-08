@@ -14,6 +14,7 @@
     padding-left: 100px;
   }
   body #content_left {
+    min-width: 565px;
     width: 60%;
   }
   body #container.sam_newgrid {
@@ -36,13 +37,14 @@ body .wrapper_new .s_form {
   padding-left: 0;
 }
 body .wrapper_new .container_new ~ #page {
-  background-color: transparent;
+  background-color: transparent !important;
   margin: 30px 0 0;
   padding-left: 0;
   position: absolute;
 }
 body .wrapper_new .container_new ~ #page .page-inner {
   padding: 14px 0 30px 236px;
+  background-color: transparent;
 }
 body .wrapper_new #s_tab.s_tab .s_tab_inner {
   padding-left: 106px;
@@ -157,10 +159,10 @@ body #container {
 }
 body #content_left {
   min-width: 540px;
-  width: 40% !important;
+  width: 40%;
 }
 body #content_left > .c-container {
-  width: 80%;
+  width: 100%;
 }
 body #content_left .c-container {
   background-color: #fff;
