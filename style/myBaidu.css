@@ -137,7 +137,7 @@ body #content_right:after {
 }
 body .container_l #rs {
   box-sizing: border-box;
-  width: 900px;
+  width: 40%;
 }
 body .container_l #rs a {
   text-decoration: none;
@@ -198,6 +198,15 @@ body .s_form .bg.s_btn_wr input {
 body .wrapper_new .sam_newgrid ~ #page {
   background-color: transparent;
 }
+body .search_tool,
+body .search_tool_conter span {
+  color: #fff;
+  transition: color 0.1s;
+}
+body .search_tool:hover,
+body .search_tool_conter span:hover {
+  color: #72adff;
+}
 body #page {
   position: absolute;
   background-color: transparent;
@@ -239,7 +248,7 @@ body #page .fk {
   display: none;
 }
 body #rs {
-  width: 538px;
+  width: 40%;
   padding: 10px;
   border-radius: 5px;
 }
@@ -259,6 +268,12 @@ body #rs {
   }
   body .wrapper_new .page-inner {
     padding-left: 96px;
+  }
+  body .wrapper_new #s_tab.s_tab {
+    padding-left: 96px;
+  }
+  body .wrapper_new #s_tab.s_tab .s_tab_inner {
+    padding-left: 0px;
   }
 }
 @media screen and (min-width: 1921px) {
