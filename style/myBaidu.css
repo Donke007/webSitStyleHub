@@ -302,6 +302,9 @@ body #rs {
     width: auto;
     padding-left: 178px;
   }
+  body #container.sam_newgrid #content_left {
+    width: 50%;
+  }
   body #container {
     padding-left: 96px;
     min-width: 1222px;
