@@ -303,7 +303,10 @@ body #rs {
     padding-left: 178px;
   }
   body #container.sam_newgrid #content_left {
-    width: 50%;
+    width: 30%;
+  }
+  body #container.sam_newgrid #content_right {
+    left: calc(40%);
   }
   body #container {
     padding-left: 96px;
