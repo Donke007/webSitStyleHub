@@ -31,17 +31,18 @@ body .c-group-wrapper {
   margin-left: 0;
   margin-right: 0;
   width: 100% !important;
-}
-body .c-group-wrapper .result-op {
-  width: 100% !important;
+  border-radius: 5px;
   border-left: 6px solid;
-  border-color: #8faacc;
+  border-color: #768da8;
   border-left-width: 0px;
   transition: borderColor 0.2s, borderLeftWidth 0.2;
 }
-body .c-group-wrapper .result-op:hover {
+body .c-group-wrapper:hover {
   border-left-width: 6px;
-  border-color: #72adff;
+  border-color: #8faacc;
+}
+body .c-group-wrapper .result-op {
+  width: 100% !important;
 }
 body .nums {
   width: 32%;

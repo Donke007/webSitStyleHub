@@ -61,18 +61,19 @@ body {
         margin-left: 0;
         margin-right: 0;
         width: 100% !important;
+        border-radius: 5px;
+        border-left: 6px solid;
+        border-color: #768da8;
+        border-left-width: 0px;
+        transition: borderColor 0.2s, borderLeftWidth 0.2;
+        &:hover {
+            border-left-width: 6px;
+            border-color: #8faacc;
+        }
 
         .result-op {
             width: 100% !important;
-            border-left: 6px solid;
-            border-color: #8faacc;
-            border-left-width: 0px;
-            transition: borderColor 0.2s, borderLeftWidth 0.2;
 
-            &:hover {
-                border-left-width: 6px;
-                border-color: #72adff;
-            }
         }
     }
 
