@@ -35,7 +35,7 @@ body .c-group-wrapper {
   border-left: 6px solid;
   border-color: #768da8;
   border-left-width: 0px;
-  transition: borderColor 0.2s, borderLeftWidth 0.2;
+  transition: borderColor 0.2s, borderLeftWidth 0.2s;
 }
 body .c-group-wrapper:hover {
   border-left-width: 6px;
@@ -43,6 +43,7 @@ body .c-group-wrapper:hover {
 }
 body .c-group-wrapper .result-op {
   width: 100% !important;
+  border-radius: 0;
 }
 body .nums {
   width: 32%;

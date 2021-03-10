@@ -1,10 +1,14 @@
 body {
-    background: url(https://www2.bing.com/az/hprichbg/rb/ParkCity_ZH-CN7858135089_1920x1080.jpg) no-repeat;
+    background: url(https://donke-c.oss-cn-hangzhou.aliyuncs.com/myBG/th.jpg) no-repeat;
+    // background: url(https://www2.bing.com/az/hprichbg/rb/ParkCity_ZH-CN7858135089_1920x1080.jpg) no-repeat;
+    background-size: contain;
     background-attachment: fixed;
+
     #b_header {
         position: relative;
         box-sizing: border-box;
         background: transparent;
+
         .head-box {
             width: 100%;
             height: 100%;
@@ -12,33 +16,40 @@ body {
             top: 0;
             filter: blur(10px);
         }
+
         #b_opalpers {
             display: none !important;
         }
     }
+
     #b_results li {
         border-radius: 5px;
         margin-bottom: 10px;
+
         &:hover {
             a {
                 text-decoration: none;
             }
+
             h2 {
                 a {
                     color: #cc5172
                 }
             }
         }
+
         a {
             transition: color 0.2s;
         }
     }
+
     #b_context {
         >li {
             border-radius: 5px;
             margin-bottom: 10px;
             background-color: #fff;
         }
+
         >li:last-child {
             background: url(https://donke-c.oss-cn-hangzhou.aliyuncs.com/myBG/aqua.gif) no-repeat;
             background-color: #fff;
@@ -46,5 +57,6 @@ body {
             background-position-y: 100%;
         }
     }
+
     #b_results .b_pag {}
 }
