@@ -1,5 +1,5 @@
 body {
-  background: url(https://donke-c.oss-cn-hangzhou.aliyuncs.com/myBG/th.jpg) no-repeat;
+  background: url(https://donke-c.oss-cn-hangzhou.aliyuncs.com/myBG/th.jpg?x-oss-process=image/blur,r_3,s_3) no-repeat;
   background-size: contain;
   background-attachment: fixed;
 }
