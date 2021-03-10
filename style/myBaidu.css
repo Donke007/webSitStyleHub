@@ -27,6 +27,11 @@ body #head #u a {
 body #container {
   width: auto;
 }
+body .c-group-wrapper {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100% !important;
+}
 body .nums {
   width: 32%;
 }
