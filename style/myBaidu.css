@@ -32,6 +32,17 @@ body .c-group-wrapper {
   margin-right: 0;
   width: 100% !important;
 }
+body .c-group-wrapper .result-op {
+  width: 100% !important;
+  border-left: 6px solid;
+  border-color: #8faacc;
+  border-left-width: 0px;
+  transition: borderColor 0.2s, borderLeftWidth 0.2;
+}
+body .c-group-wrapper .result-op:hover {
+  border-left-width: 6px;
+  border-color: #72adff;
+}
 body .nums {
   width: 32%;
 }
