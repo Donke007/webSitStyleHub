@@ -1,7 +1,10 @@
 body {
   background: url(https://donke-c.oss-cn-hangzhou.aliyuncs.com/myBG/th.jpg?x-oss-process=image/blur,r_20,s_16) no-repeat;
-  background-size: cover;
   background-attachment: fixed;
+  background-size: cover;
+}
+body #b_tween {
+  margin-bottom: 12px;
 }
 body #b_header {
   position: relative;
