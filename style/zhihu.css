@@ -7,5 +7,5 @@
 .App-main .ZVideoItem-video,
 .App-main .VideoAnswerPlayer,
 .App-main .VideoAnswerPlayer-video {
-  height: 0;
+  height: 0 !important;
 }
