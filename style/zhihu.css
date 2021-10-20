@@ -4,3 +4,8 @@
 .App-main .QuestionHeader-title {
   color: #fff;
 }
+.App-main .ZVideoItem-video,
+.App-main .VideoAnswerPlayer,
+.App-main .VideoAnswerPlayer-video {
+  height: 0;
+}
