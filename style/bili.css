@@ -1,3 +1,15 @@
 body.dark {
   background: #333;
 }
+body.dark .i_cecream,
+body.dark .bili-video-card__wrap,
+body.dark .large-header,
+body.dark .bili-header__channel {
+  background: transparent;
+}
+body.dark .bili-video-card .bili-video-card__info--tit {
+  color: #fff;
+}
+body .adcard-content {
+  display: none;
+}
