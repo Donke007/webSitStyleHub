@@ -79,21 +79,21 @@ const setDonkeConfig = () => {
   'use strict';
 
   $('<style type="text/css" id="userCSS"></style>').appendTo('head');
-  
-  var styleRule = $('#userCSS');
   // console.log(styleRule);
   console.log($('.right-entry-item')[0]);
-  
-  setTimeout(() => {
+  const intv = setInterval(() => {
     const topRight = $('.right-entry-item')[0];
-    const item = $('<li class="right-entry-item" id="changeModeArea"></li>');
-    $(topRight).after(item);
-    getDonkeConfig().finally(() => {
-      if (config.mode == 'dark') {
-        handleDonkeDarkMode();
-      } else {
-        handleDonkeLightMode();
-      }
-    });
+    if (topRight) {
+      clearInterval(intv);
+      const item = $('<li class="right-entry-item" id="changeModeArea"></li>');
+      $(topRight).after(item);
+      getDonkeConfig().finally(() => {
+        if (config.mode == 'dark') {
+          handleDonkeDarkMode();
+        } else {
+          handleDonkeLightMode();
+        }
+      });
+    }
   }, 1000);
 })();
