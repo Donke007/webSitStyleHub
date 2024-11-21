@@ -81,7 +81,9 @@ const setDonkeConfig = () => {
   $('<style type="text/css" id="userCSS"></style>').appendTo('head');
   
   var styleRule = $('#userCSS');
-  console.log(styleRule);
+  // console.log(styleRule);
+  console.log($('.right-entry-item')[0]);
+  
   setTimeout(() => {
     const topRight = $('.right-entry-item')[0];
     const item = $('<li class="right-entry-item" id="changeModeArea"></li>');
