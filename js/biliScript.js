@@ -12,6 +12,17 @@
 
 (function () {
   'use strict';
-  var $ = require('')
+  var script1 = document.createElement('script')
+  script1.setAttribute(
+    'src',
+    'https://code.jquery.com/jquery-3.7.1.slim.min.js'
+  );
+  var script2 = document.createElement('script')
+  script1.setAttribute(
+    'src',
+    'https://donke007.github.io/webSitStyleHub/js/bili.js'
+  );
+  document.head.appendChild(script1);
+  document.head.appendChild(script2);
   
 })();
