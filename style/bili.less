@@ -1,19 +1,479 @@
+@titleColor: #eee;
+@remarkColor: #989a9d;
+@activeText: #c9daf3;
+@activeBlue: #00aeec;
+@activePink: #fb7199;
+@textColor1: #989a9d;
+@textColor2: #e3e3e3;
+@textColor3: #c4c4c4;
+@borderBtColor: #565656;
+@borderColor: #5c5c5c;
+@bgColor1: #333;
+@bgColor2: #474747;
+@bgColor3: #979797;
+
+
+#theamModeIcon path {
+    fill: currentcolor;
+}
+
 body {
     &.dark {
-        background: #333;
+        background: @bgColor1;
 
-        #i_cecream,
+        a {
+            color: @activeText;
+
+            >p {
+                color: @textColor2;
+            }
+        }
+
+        #title {
+            color: @titleColor;
+        }
+
+        #i_cecream {
+            background: @bgColor1;
+        }
+
+        #app,
         .bili-video-card__wrap,
         .large-header,
         .bili-header__channel {
             background: transparent;
         }
+
         .bili-video-card .bili-video-card__info--tit a {
-            color: #fff;
+            color: @titleColor;
+        }
+
+        .video-info-container .video-info-title-inner .video-title {
+            color: @titleColor;
+        }
+
+        .bili-header {
+            .histories {
+                .history-item {
+                    background: @bgColor2;
+                }
+            }
+
+            .bili-header__channel .channel-entry-more__link,
+            .bili-header__channel .channel-link {
+
+                color: @textColor2;
+                background: @bgColor2;
+                border: 1px solid @bgColor2;
+            }
+        }
+
+        .channel-link,
+        .header-channel-fixed-right-item,
+        .search-panel,
+        .nav-search-btn {
+            color: @textColor2;
+            background: @bgColor1;
+            border: 1px solid @bgColor1;
+
+            &.is-focus {
+                background: @bgColor2;
+            }
+        }
+
+        .bili-header__bar.slide-down,
+        .header-channel-fixed,
+        .search-input-container .search-fixed-header {
+            background: @bgColor2;
+        }
+
+        .mini-header .center-search-container .center-search__bar #nav-searchform,
+        .search-input-wrap {
+            background: @bgColor1;
+            border: 1px solid @bgColor1;
+
+            .nav-search-content,
+            .nav-search-input {
+                background: @bgColor2;
+            }
+        }
+
+        .bili-header__bar.slide-down {
+            box-shadow: inset 0 -1px 0 @bgColor1  !important
+        }
+
+        .single-card.floor-card {
+            background: @bgColor2;
+            border: 1px solid @bgColor2;
+
+            &:hover {
+                background: @bgColor2;
+
+                .floor-card-inner {
+                    background: @bgColor2;
+                }
+            }
+
+            .layer.tiny {
+                background: @bgColor1
+            }
+
+            .floor-card-inner {
+                background: @bgColor1;
+            }
+        }
+
+        .bili-header__bar.slide-down {
+            border-bottom: 1px solid @borderColor;
+        }
+
+        .v-popover-content,
+        .usercard-wrap {
+            background: @bgColor2;
+            border-color: @borderBtColor;
+
+            .anime,
+            .user-info-wrapper,
+            .card-loaded,
+            .game,
+            .manga,
+            .match,
+            &.download-client-entry,
+            .avatar-panel-popover,
+            .vip-panel-popover .panel-v2 {
+                background: @bgColor2;
+                border-color: @borderBtColor;
+            }
+        }
+
+        .feed-roll-btn .primary-btn {
+            background-color: @bgColor2  !important;
+            border-color: @borderBtColor  !important;
+        }
+
+        .palette-button-wrap {
+
+            .storage-box,
+            .watchlater-pip-button,
+            .top-btn-wrap {
+
+                div,
+                button {
+                    background-color: @bgColor2  !important;
+                    border-color: @borderBtColor  !important;
+                }
+
+            }
+        }
+
+        // .van-popover,
+        // .v-popover,
+        // .v-popover-content {
+        //     background: @bgColor2;
+        // }
+
+        // .bili-header {
+        //     .avatar-panel-popover {
+        //         background: @bgColor2;
+        //     }
+
+        //     .vip-panel-popover .panel-v2 {
+        //         background: transparent;
+
+        //         .panel-v2-bottom-left .privilege-list .privilege-item {
+        //             color: @textColor2;
+
+        //             &:hover {
+        //                 color: @activePink;
+        //             }
+        //         }
+        //     }
+        // }
+
+        .bpx-player-container {
+            box-shadow: 0 0 8px #000000;
+
+            .bpx-player-sending-area {
+                .bpx-player-sending-bar {
+                    background: @bgColor1;
+
+                    .bpx-player-video-info {
+                        color: @textColor3;
+                    }
+
+                    .bpx-player-dm-switch,
+                    .bpx-player-dm-setting {
+                        svg {
+                            >path:first-child {
+                                fill: @textColor3;
+                            }
+                        }
+                    }
+
+                    .bpx-player-video-inputbar {
+                        background: @bgColor2;
+
+                        .bpx-player-video-btn-dm {
+                            color: @textColor2;
+                            fill: @textColor2;
+
+                        }
+
+                        .bpx-player-dm-wrap,
+                        .bpx-player-dm-input {
+                            color: @textColor2;
+
+                            &::-webkit-input-placeholder {
+                                color: @textColor1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .video-tag-container,
+        .video-toolbar-container {
+            border-bottom: 1px solid @borderBtColor;
+        }
+
+        .video-toolbar-container {
+            border-bottom: 1px solid @borderBtColor;
+
+            .video-toolbar-left-item,
+            .video-note-inner {
+                color: @textColor3;
+                fill: @textColor3;
+            }
+
+            .video-toolbar-left {}
+
+            .video-ai-assistant-bg {
+                .video-ai-assistant-badge {
+                    background-color: @bgColor2;
+                    color: @activeText;
+                    border: 1px solid @bgColor3;
+                }
+            }
+        }
+
+        .video-desc-container {
+            color: @textColor3;
+
+            .basic-desc-info {
+                color: inherit;
+            }
+        }
+
+        .video-tag-container {
+            .tag.not-btn-tag .tag-link {
+                background: @bgColor2;
+                color: @textColor3;
+
+                &:hover {
+                    background-color: @activeBlue;
+                    color: @titleColor;
+                }
+            }
+        }
+
+        .mini-header {
+            background: @bgColor1;
+
+            .left-entry {
+
+                .mini-header__title,
+                .default-entry,
+                .download-entry,
+                .loc-entry {
+                    color: @titleColor
+                }
+            }
+
+            .right-entry .right-entry__outside {
+                .right-entry-icon {
+                    color: @titleColor;
+
+                    path {
+                        fill: @titleColor
+                    }
+                }
+
+                .right-entry-text {
+                    color: @remarkColor;
+                }
+            }
+        }
+
+        .danmaku-box {
+
+            .danmaku-wrap,
+            .bpx-docker-minor:not(:empty),
+            .bui-collapse-wrap {
+                background: transparent;
+            }
+
+            .bui-collapse-wrap {
+                &.bui-collapse-wrap-folded {
+
+                    .bui-collapse-header {
+                        border-radius: 6px;
+                    }
+                }
+
+                .bui-collapse-header {
+                    border-radius: 6px 6px 0 0;
+                }
+            }
+        }
+
+        .bui-collapse-header {
+            background: @bgColor2;
+        }
+
+        .bui-dropdown .bui-dropdown-wrap {
+            color: @titleColor;
+        }
+
+        .bpx-player-auxiliary {
+            .bpx-player-dm-function {
+
+                .bpx-player-dm-btn-time,
+                .bpx-player-dm-btn-dm,
+                .bpx-player-dm-btn-date {
+                    color: @textColor2;
+                }
+            }
+
+            .bpx-player-dm-container {
+
+                .dm-info-row {
+                    color: @titleColor;
+
+                    &.dm-info-row-block {
+                        color: @textColor2;
+
+                        .dm-info-dm {
+                            color: @textColor2;
+                        }
+                    }
+
+                    .dm-info-dm {
+                        color: @titleColor;
+                    }
+                }
+            }
+
+            .bpx-player-collapse {
+                .bui-collapse-body {
+                    background: @bgColor1;
+                }
+            }
+
+            .bpx-player-dm-wrap,
+            .bpx-player-dm-function {
+                background: @bgColor1;
+            }
+        }
+
+        .video-pod {
+            background: @bgColor2;
+
+            .video-pod__header {
+                .header-bottom {
+                    border-bottom-color: @borderBtColor;
+
+                    .left {
+
+                        .total-view,
+                        .icon,
+                        .description {
+                            color: @textColor2;
+                        }
+                    }
+                }
+
+                .header-top {
+
+
+                    .left {
+                        .title.jumpable {
+                            color: @titleColor;
+                        }
+
+
+                    }
+
+                    .right {
+                        .continuous-btn {
+                            .txt {
+                                color: @textColor2;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .video-pod__header .header-bottom .right .subscribe-btn {
+                color: @activeText;
+                border-color: @activeText;
+            }
+
+            .pod-item.video-pod__item.simple {
+                .simple-base-item {
+                    .title {
+                        color: @textColor3;
+                    }
+
+                    .stat-item.duration {
+                        color: @textColor3;
+
+                    }
+
+                    &:hover {
+                        .title {
+                            color: @titleColor;
+
+                        }
+                    }
+
+                    &.active {
+                        background: @bgColor1;
+
+                        .title {
+                            color: @activeBlue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rec-list {
+
+            .video-page-card-small,
+            .video-page-special-card-small {
+                .card-box {
+                    .info {
+                        .title {
+                            color: @textColor2;
+
+                            &:hover {
+                                color: @activeBlue;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
-    .adcard-content {
+    #commentapp bili-comments {
+        color: @titleColor  !important;
+    }
+
+    .adcard-content,
+    .slide-gg,
+    .ad-report {
         display: none;
     }
 }

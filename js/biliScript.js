@@ -11,8 +11,14 @@
 
 (function () {
   'use strict';
+  const ready = () => {
+    document.head.appendChild(script2);
+    
+  };
   var script1 = document.createElement('script');
   script1.setAttribute('src', 'https://code.jquery.com/jquery-3.7.1.min.js');
+  script1.setAttribute('type', 'text/javascript');
+  document.head.appendChild(script1);
   var script2 = document.createElement('script');
   script2.setAttribute(
     'src',
@@ -24,9 +30,12 @@
     'https://donke007.github.io/webSitStyleHub/js/localforage.min.js'
   );
   var link1 = document.createElement('link');
-  link1.setAttribute('rel', 'stylesheet').setAttribute('href', 'https://donke007.github.io/webSitStyleHub/style/bili.css').setAttribute('type', 'text/css')
+  link1.setAttribute('rel', 'stylesheet');
+  link1.setAttribute('href', 'http://127.0.0.1:5500/style/bili.css');
+  // link1.setAttribute('href', 'https://donke007.github.io/webSitStyleHub/style/bili.css')
+  link1.setAttribute('type', 'text/css');
   document.head.appendChild(link1);
-  document.head.appendChild(script1);
-  document.head.appendChild(script2);
+  setTimeout(ready, 500);
+
   document.head.appendChild(script3);
 })();
