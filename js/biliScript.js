@@ -25,6 +25,7 @@
   );
   var link1 = document.createElement('link');
   link1.setAttribute('rel', 'stylesheet').setAttribute('href', 'https://donke007.github.io/webSitStyleHub/style/bili.css').setAttribute('type', 'text/css')
+  document.head.appendChild(link1);
   document.head.appendChild(script1);
   document.head.appendChild(script2);
   document.head.appendChild(script3);
