@@ -7,7 +7,7 @@ body.dark .large-header,
 body.dark .bili-header__channel {
   background: transparent;
 }
-body.dark .bili-video-card .bili-video-card__info--tit {
+body.dark .bili-video-card .bili-video-card__info--tit a {
   color: #fff;
 }
 body .adcard-content {
