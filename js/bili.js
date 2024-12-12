@@ -87,6 +87,9 @@ const setDonkeConfig = () => {
       clearInterval(intv);
       const item = $('<li class="right-entry-item" id="changeModeArea"></li>');
       $(topRight).after(item);
+      setTimeout(() => {
+        $($('.right-entry-item')[0]).after(item);
+      }, 2000);
       getDonkeConfig().finally(() => {
         if (config.mode == 'dark') {
           handleDonkeDarkMode();
