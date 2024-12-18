@@ -86,7 +86,7 @@ const setDonkeConfig = () => {
     if (topRight) {
       clearInterval(intv);
       const item = $('<li class="right-entry-item" id="changeModeArea"></li>');
-      $(topRight).after(item);
+      // $(topRight).after(item);
       setTimeout(() => {
         $($('.right-entry-item')[0]).after(item);
       }, 5000);
