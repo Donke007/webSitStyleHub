@@ -89,7 +89,14 @@ const setDonkeConfig = () => {
       // $(topRight).after(item);
       setTimeout(() => {
         $($('.right-entry-item')[0]).after(item);
-      }, 5000);
+        getDonkeConfig().finally(() => {
+          if (config.mode == 'dark') {
+            handleDonkeDarkMode();
+          } else {
+            handleDonkeLightMode();
+          }
+        });
+      }, 2000);
       getDonkeConfig().finally(() => {
         if (config.mode == 'dark') {
           handleDonkeDarkMode();
